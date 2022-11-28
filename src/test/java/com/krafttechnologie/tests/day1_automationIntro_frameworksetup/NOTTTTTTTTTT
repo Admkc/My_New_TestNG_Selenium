@@ -1,0 +1,26 @@
+JAVA --> it is programming language in which we write our test
+
+Intellij --> We use it to write and execute our code/tests
+
+Library/dependency -- > set of prewritten classes, methods which we
+can add to our framework(pom.xml)
+
+Selenium -- > Automating tool, library it automates the browser
+**yazılım test otomasyon kütüphanesidir.
+**bir web yazılımı test etme framework’üdür.
+
+Selenium Web Driver---> test case oluşturmak ve yürütmek için tasarlanmış bir framework’tür.
+**bir IDE değil, programlama kütüphanesidir.
+**komutları kabul eden ve bunları bir tarayıcıya gönderen bir tarayıcı otomasyon framework üdür.
+
+“Web Element” nedir?
+Web sayfasında bulunan her bir öğe element olarak adlandırılır.
+Calistıgımız web uygulamasından kullanmak istedigimiz her bir elementi locator ile belirleyip
+Seleniumda olusturacagımız bir Web elemente assign ederiz.
+
+
+Maven --> Build Management tool, we use it to manage dependencies
+**komutların derlenmesi sırasında kullanılan otomasyon ve inşa aracıdır
+
+Pom.xml --> Brain of maven, we put dependencies and settings here.
+**proje ile ilgili olan her türlü bilgiyi içerisinde barındıran bir dosyadır

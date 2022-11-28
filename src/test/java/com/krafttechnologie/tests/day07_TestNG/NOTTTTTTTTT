@@ -1,0 +1,24 @@
+TestNG bir Unit Testing tool udur.
+
+TestNG(Test Next Generation) --> Unit Testing Tool, normalde developerlar kullanıyor.
+Tester olarak bizde farklı amaçlar için
+(test koşturma, assertion, bir grup testin içerisinde belli bir kısmını beraber çalıştırma-) kullanıyoruz.
+
+Test yapmamıza olanak sağlar
+Testleri düzenlememize
+assertion and verification - doğrulama
+generate reports - raporlama
+
+Annotations
+@Test is TestNG method. → testler bu method ile yapılır
+
+Assertion
+ testNG içinde bir class ve karşılaştırıp doğrulama yapar.
+ eğer test steplerinden biri başarısız olursa devam eden kodlar execute olmaz.
+
+ - eğer test annotationlardan biri başarısız olursa
+
+ diğerlerine etki etmez, her bir test bağımsız çalışır
+
+ **her  halukarda Before/After methodlar çalışacaktır, testlerden bir veya birkaçının
+   başarısız olması etkilemez, ve böylece browser kapatılabilir

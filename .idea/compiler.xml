@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Batch2_TetsNG_Selenium" />
+        <module name="My_New_TestNG_Selenium" />
+        <module name="MyWork_Batch2_TestNG_Selenium" />
         <module name="Batch2_TestNG_Selenium" />
       </profile>
     </annotationProcessing>
