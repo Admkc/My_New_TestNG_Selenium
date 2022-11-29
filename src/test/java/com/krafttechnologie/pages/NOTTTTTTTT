@@ -1,0 +1,23 @@
+ Amaç bir web sayfasında tekrar tekrar kullandığımız locate işlemlerini
+    bir kere yapıp ihtiyacımız oldukca kullanmaktır.
+    Page class özel bir web-page veya o sayfanın alt bölümlerinden biri için olusturulabilir.
+    * bir page clası olusturdugumuzda yapmamız gereken bir constructor olusturup icerisinde Driver a ilk deger ataması yapmaktır.
+    *Pace classta locate ettigimiz web elementleri Test methodunda kullanmak için
+    OOP konseptindeki yontemlerden obje olusturacagız.
+
+    • Pages: Web sayfalarinin oldugu klasordur. Her sayfaya ait WebElements ve
+    gerekli metodlar bulunur.
+    Ayrica icerisinde Web sayfalarinin hepsi icin ortak olan BasePage
+    sayfasi vardir.
+
+
+
+
+• Pages: Klasor altinda web sayfalarina ait classlari olusturduktan sonra o
+sayfaya ait bir tane constructor olusturulur. Bunun amaci bu classdan herhangi
+bir yerde object olusturulurken ilk cagrilan metod olmasidir.
+Bu constructor in icerisine Seleniumdan PageFactory classindan initElements
+metodu cagrilir. Bu metod sayfaya ait WebElementlerin bulmak ve kullanmak
+icin cagrilir.
+Olusturulan classlar icerisine ayrica metodlar da yazilabilir. Bu yazilan metodlar
+da baska classlardan cagrilarak calistirilabilir.

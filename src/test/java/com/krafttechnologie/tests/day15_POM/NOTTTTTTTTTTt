@@ -13,3 +13,81 @@ POM, Test durumlarını otomatikleştirmek için Selenium’da yaygın olarak ku
 - Tekrar kullanılabilir yapılar oluşturmamızı da sağlar.
  -Özellikle agile bir process izliyorsanız testlerin sürdürebilirliğini artırır.
  -Bir sistematiğe oturturuz ve bir şeyleri değiştirmek istediğimizde nereden değişiklik yapacağımızı biliriz.
+
+ POM (Page Object Model) Nedir?
+
+ pom un temel amacı reusability  ve maintenance
+
+ ***javada oop konseptini kullanarak seleniumda testler yapmamızı saglayan bir structor,
+ yani test frameworku dizayn seması.
+ ***temel perspektifi bir test senaryosunu calıstırmak için ihtiyacımız olan bileşenleri
+ farklı classlarda olusturup OOP prensipleri ile @TEst annotation ile tanımlanan test metotunu kullanmaktır.
+ ***neyi nerde bulacagimizi neyi nerde kullanacagımızı bilecegiz.mutfak modeli.
+
+ **test frameworkun olusması ve maintanence(devamlılıgi) icin
+ 1-test dataları (configiration proporties)
+ 2-Locate lar   (login pages)
+ 3-driver  (driver)
+ 4-reusable method  (test base)
+
+ ***baska bir classtan 3 yöntem ile variable ya da method kullanabiliriz.
+ 1-inheridance
+ 2-object olusturarak
+ 3-stataic class uyelerini kullanma
+
+
+ Sayfa nesnesi, test edilen uygulamanın sayfası için bir arayüz görevi gören nesne yönelimli bir sınıftır.
+ Sayfa sınıfı, web öğelerini ve web öğeleriyle etkileşim kurma yöntemlerini içerir.
+
+ Test senaryolarını otomatikleştirirken, bu sayfa sınıflarının nesnesini oluşturuyoruz ve
+ bu sınıfların fonksiyonlarını çağırarak web öğeleriyle etkileşim kurmasını sağlıyoruz.
+
+ Bu Tasarım Modeli, web sayfalarının karşılık gelen bir sınıf tarafından temsil edildiği
+ ve web öğelerinin sınıfın değişkenleri tarafından temsil edildiği ve tüm
+ etkileşimlerin sınıfın fonksiyonları aracılığıyla Selenium’da kullanılır.
+
+ POM modelinin avantajları:
+
+ · Yeniden Kullanılabilirlik: Gerekirse farklı test durumlarında sayfa sınıfını yeniden kullanabiliriz,
+  bu da her test durumu için web öğelerini ve bunlarla etkileşime girme yöntemlerini tanımlamak için kod
+  yazmamız gerekmediği anlamına gelir.
+
+ · Sürdürülebilirlik: Yukarıdaki resimden de görebileceğimiz gibi,
+ test durumu ve sayfa sınıfı birbirinden farklıdır, bu da herhangi bir yeni web öğesi eklenirse
+ veya mevcut bir güncellenirse kodu kolayca güncelleyebileceğimiz anlamına gelir.
+
+ · Okunabilirlik: Yukarıdaki resimde gördüğümüz gibi sayfa kodu,
+ kodun okunabilirliğini geliştirmeye yardımcı olan test kodundan ayrılmıştır.
+
+ · Sayfa Nesnesi Tasarım Modeli, kullanıcı arayüzündeki işlemlerin ve
+ akışların doğrulamadan ayrılması gerektiğini söylüyor. Bu kavram, kodumuzu daha temiz ve anlaşılması kolay hale getirir.
+
+ · Bir diğer faydası, nesne deposunun test senaryolarından bağımsız olmasıdır,
+ bu nedenle aynı nesne deposunu farklı araçlarla farklı bir amaç için kullanabiliriz.
+ Örneğin, Selenium’daki Sayfa Nesnesi Modelini, işlevsel Test için TestNG/JUnit ile ve aynı zamanda kabul testi için
+ JBehave/Cucumber ile entegre edebiliriz .
+
+ POM NICIN IHTIYAC DUYARIZ?
+ Seleniumda otomasyon baslatmak icin iki seye ihtiyac vardir:
+ WebElementleri bulmak ve bunlar uzerinde islem yapmak. Basit
+ bir test uygulamasinda cok fazla komut dosyasina(script) ihtiyac
+ duyulmaz. Ancak Test yapilacak alanlar cogaldikca ayni elementleri
+ farkli yerlerde tekrar ve tekrar kullanmamiz gerekir. Bu durum kod
+ dosyalarinin bakimini cok zorlastirir. Bu sorunu cozmek ve test
+ otomasyonunu daha etkin ve etkili olmasini saglamak icin POM
+ kullanilir. Boylece daha az komut dosyasi yazilir ve tekrarlamalarin
+ onune gecilmis olur.
+
+ POM YAPISI(STRUCTURE)
+ • Pages
+ ➢BasePage
+ ➢LoginPage
+ • Tests
+ ➢LoginTest
+ • Utilities
+ ➢TestBase
+ ➢Driver
+ ➢ConfigurationReader
+ ➢BrowserUtils
+ pom.xml
+ configuration.properties

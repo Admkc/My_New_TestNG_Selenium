@@ -16,6 +16,11 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class BrowserUtils {
+    /**
+     * • Utilities: icerisinde tum projede ortak kullanilan metodlarin oldugu
+     * klasordurdur. Browserutilities, Driver, ConfigurationReader ..vb
+
+     */
 
 
     /*

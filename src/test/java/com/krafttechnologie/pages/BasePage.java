@@ -9,12 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
 
-   /** Amaç bir web sayfasında tekrar tekrar kullandığımız locate işlemlerini
-    bir kere yapıp ihtiyacımız oldukca kullanmaktır.
-    Page class özel bir web-page veya o sayfanın alt bölümlerinden biri için olusturulabilir.
-    * bir page clası olusturdugumuzda yapmamız gereken bir constructor olusturup icerisinde Driver a ilk deger ataması yapmaktır.
-    *Pace classta locate ettigimiz web elementleri Test methodunda kullanmak için
-    OOP konseptindeki yontemlerden obje olusturacagız.*/
+
  WebDriver driver;
 
     public BasePage(){
