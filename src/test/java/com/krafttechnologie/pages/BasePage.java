@@ -13,7 +13,7 @@ public abstract class BasePage {
     bir kere yapıp ihtiyacımız oldukca kullanmaktır.
     Page class özel bir web-page veya o sayfanın alt bölümlerinden biri için olusturulabilir.
     * bir page clası olusturdugumuzda yapmamız gereken bir constructor olusturup icerisinde Driver a ilk deger ataması yapmaktır.
-            *Pace classta locate ettigimiz web elementleri Test methodunda kullanmak için
+    *Pace classta locate ettigimiz web elementleri Test methodunda kullanmak için
     OOP konseptindeki yontemlerden obje olusturacagız.*/
  WebDriver driver;
 

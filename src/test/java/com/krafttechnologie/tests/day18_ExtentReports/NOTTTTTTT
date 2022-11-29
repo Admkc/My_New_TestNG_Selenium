@@ -1,0 +1,19 @@
+Extent Reports, Anshoo Arora tarafından geliştirilen,JUnit ve TestNG çerçevelerini
+ kullanarak Selenium WebDriver'a entegre edilebilen özelleştirilebilir bir HTML raporudur.
+
+ Kapsam Raporları, JUnit ve TestNG aracılığıyla oluşturulan yerleşik raporlara kıyasla,
+ her test adımında pasta grafik gösterimi, test aşamalı rapor oluşturma,
+  ekran görüntüleri ekleme vb. Gibi çeşitli avantajlar ve paylaşılabilen sunum yapılabilir
+  kullanıcı arayüzü projenin tüm paydaşları.
+
+ Otomatik bir test komut dosyası başarıyla çalıştığında, test uzmanlarının
+ bir test yürütme raporu oluşturması gerekir. TestNG varsayılan bir rapor sunsa da ayrıntıları sağlamaz .
+
+
+ Extent Report ;
+
+ Her test adımının grafik gösterimini elde etmek için özelleştirilebilen zengin HTML raporları sağlar.
+ Tek bir test paketinde çalıştırılan test senaryolarını kolayca takip edebilirsiniz.
+ Birden çok çerçeve TestNG ve JUnit ile entegrasyon kolaylaşır.
+ Testin yürütülmesi için gereken süreyi belirlemenize yardımcı olur.
+ Tamamen kontrol edebileceğiniz açıklayıcı bir rapor oluşturmak için önemli ekran görüntüleri, etiketler, cihazlar veya diğer ilgili bilgileri ekleyebilirsiniz.

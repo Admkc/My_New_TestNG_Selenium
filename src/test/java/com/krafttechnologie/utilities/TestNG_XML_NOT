@@ -1,0 +1,16 @@
+TestNG.xml Nedir?
+TestNG.xml dosyası, testlerimizi düzenlememize yardımcı olan bir yapılandırma dosyasıdır.
+Test uzmanlarının birden çok test sınıfı oluşturmasına ve işlemesine,
+test süitlerini ve testleri tanımlamasına olanak tanır
+
+Tüm test senaryolarını bir araya getirip tek bir XML dosyası altında çalıştırarak testlerin
+yürütülmesini kontrol ederek bir test uzmanının işini kolaylaştırır.
+
+TestNG.xml dosyasının başlıca avantajları şunlardır:
+
+Test yöntemlerinin paralel yürütülmesini sağlar.
+Bir test yönteminin başka bir test yöntemine bağımlı olmasına izin verir.
+Test yöntemlerimizi önceliklendirmemize yardımcı olur.
+Test yöntemlerinin test grupları halinde gruplandırılmasına izin verir.
+@Parameters ek açıklamasını kullanarak test senaryolarının parametreleştirilmesini destekler.
+@DataProvider ek açıklamasını kullanarak Veriye dayalı testlerde yardımcı olur.
