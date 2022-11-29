@@ -11,6 +11,11 @@ import org.testng.annotations.Test;
 
 public class isEnabled {
 
+    /**
+     * eelementin kullanıp kullanılmadıgı,etkin olup olmadıgı,etkilesime gecilip gecilmediği,
+
+     */
+
     WebDriver driver;
     @BeforeMethod
     public void setUp(){

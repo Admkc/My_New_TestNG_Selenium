@@ -13,6 +13,25 @@ import org.testng.annotations.Test;
 import java.util.Set;
 
 public class JavaScriptExecutor {
+    /**
+     Selenium ile cözemedigimiz bazı sorunlarda javascript executor kullanarak cözebiliriz.
+     clicking , sendkeys , scroll down , scroll up
+
+     JavaScriptExecutor, Selenium Webdriver aracılığıyla JavaScript'in yürütülmesine yardımcı olan bir
+     Arayüzdür. JavaScriptExecutor, javascript'i seçilen pencerede veya geçerli sayfada çalıştırmak için
+     "executescript" ve "executeAsyncScript" olmak üzere iki yöntem sağlar.
+     Seleniumda bir web sayfasinda islemler yapmak icin Webdriver kullaniriz. Bunun icinde
+     WebElementlerden faydalaniriz. Ancak bazen bunlar ise yaramaz ve islemleri gerceklestiremeyiz.
+     Bu durumlarda JavaScriptExecutor kullaniriz. Selenium javascriptexecutor u desteskler extra bir
+     sey yuklemeye ihtiyac yoktur.
+
+     Bizim kursumuzda metodlardan executeScript kullanacagiz.
+     Temel JavascriptExecutor syntax:
+     JavascriptExecutor js = (JavascriptExecutor) driver;
+     js.executeScript(Script,Arguments);
+     Script:Yurutulmesi gereken javascrip.
+     Arguments: Komut dosyasinin argumentleri.
+     */
 
     WebDriver driver;
 

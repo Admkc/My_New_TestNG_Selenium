@@ -11,6 +11,25 @@ import org.testng.annotations.Test;
 import java.util.Set;
 
 public class MultipleWindows {
+    /**
+     Selenyumda Tab ve Windows arasında fark yoktur.
+     Varsayılan olarak selenyum bir HTML sayfasını kontrol eder
+     Sayfayı ilk açtığımızda sadece o sayfayı işaret eder.
+     Yeni Tab/Window açıldığında hala eski/current/mevcut Window üzerinde işleme
+     devam eder
+     Yeni Window ile herhangi bir enjeksiyon yapmak için yeni Window a geçilmelidir.
+
+     driver.getWindowHandle())**; -→ current/geçerli window a ait unique/benzersiz bir
+     kod döndürür. —> Unique identifier for window
+
+     driver.getWindowHandles()**; — > tüm açık windows a ait ID leri döndürür. (Set of
+     String ile—> Set<String>)
+
+     MULTIPLE WINDOWS
+     getWindowHandle();
+     getWindowHandles();
+     driver.switchTo().window(windowHandle);
+     */
     WebDriver driver;
 
     @BeforeMethod

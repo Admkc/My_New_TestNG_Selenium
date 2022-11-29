@@ -11,6 +11,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class PopUpAndAlerts {
+    /**  POP-UPS
+     * Yapılarına göre 2 farklı pop up handle etme yolu var.
+     * HTML pop Ups
+     pop up HTML de ise - yani inspect/incele yapalabiliyorsa normal usullerle LOCATE edilir.
+
+     * Javascript Alerts
+     Javascript kaynaklıdır ve js alerts olarak bilinir.-özel bir kütüphane lazım--
+     * Inspect/İncele yapılamaz, ( üstünde click vs. olmaz)
+     * JS Alerts için Alert class (Seleniumdan) kullanılır
+
+
+     Alert alert = driver.switchTo().alert();
+     alert.accept() --> OK
+     alert.dismiss() --> Cancel
+     alert.sendKeys("String") --> kutucuğa text gönderme*/
+
 
     WebDriver driver;
 

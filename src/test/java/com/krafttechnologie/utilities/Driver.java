@@ -12,6 +12,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
+    /**driver class
+     * Web driver i olusturmak  kullanacagımız browsera göre ilgili ayarları yapmak ve isimiz bittiginde driwer ı kapatmak icin
+     ihyiyacımız olan 2 metodu barındırır.
+     1-get driwer metodu
+     driwer ı olusturur.configProperties dosyasında yazdıgımız browser a göre ayarını yapar
+     2- close driwer metodu ise isimiz bittiginde driwer ı kapatabilmemizi saglar.
+     */
 
     private Driver() {}
 

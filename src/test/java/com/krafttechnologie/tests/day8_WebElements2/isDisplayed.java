@@ -12,6 +12,12 @@ import org.testng.annotations.Test;
 
 public class isDisplayed {
 
+     /**
+     * web element kutusu var mı, yeri var mı,web element gözüküyor mu
+     * görunür mu degil mi
+     */
+
+
     WebDriver driver;
     @BeforeMethod
     public void setUp(){

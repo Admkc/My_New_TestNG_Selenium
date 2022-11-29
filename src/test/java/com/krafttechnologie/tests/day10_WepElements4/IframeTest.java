@@ -9,6 +9,28 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class IframeTest {
+    /**
+     Frames  HTML İÇİNDE HTML
+     Frames kullanarak HTML'nin içine koyabiliriz.
+     Frame varsa, selenyum frame içinde ne olduğunu kontrol edemez.
+     Önce iframe'i değiştirmeliyiz.
+     iframe'e geçtiğimizde, selenium biz geri değiştirene kadar default/varsayılan sayfayı göremez,
+     Bir seferde sadece bir frame değiştirebiliriz ve torunlara doğrudan geçilmez.
+     kardeş/sibling arası geçiş/switch olmaz sadece ebeveynden çocuğa/parentchild.
+
+     Parent To child
+     driver.switchTo().frame(...)
+     1. int index
+     2. String id or name
+     3. Webelement locator
+
+     ** bütün geçişler parent to child ve child to parent
+     ** siblings(kardeşler) arası geçiş söz konusu değil
+
+     Child to Parent
+     driver.switchTo().parentFrame(); --> bir üste götürür
+     driver.switchTo().defaultContent(); --> en üste götürür
+     */
     WebDriver driver;
 
     @BeforeMethod

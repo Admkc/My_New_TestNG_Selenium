@@ -12,6 +12,19 @@ import org.testng.annotations.Test;
 
 public class DropDownWithSelect {
 
+    /**
+     Özel bir webelement. İletişim kurmak zor.
+     Select() methodu ile manipüle edilir.
+     Eğer ilgili dropdown locate edildiğinde 'tag' olarak 'select' ifadesini görüyorsak Select() classını ve onun sahip olduğu methodları kullanacağız.
+     WebElement dropDown = driver.findElement(...);
+     Select select = new Select(dropDown);
+     select.selectByIndex(INTEGER);
+     select.selectByVisibleText(STRING);
+
+     List<WebElement> options = select.getOptions(); --> dropdown menüdeki bütün elementler options içerisinde.
+
+     */
+
     WebDriver driver;
     @BeforeMethod
     public void setUp(){

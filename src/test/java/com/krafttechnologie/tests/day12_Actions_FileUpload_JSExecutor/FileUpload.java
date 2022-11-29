@@ -10,6 +10,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class FileUpload {
+    /**
+
+     //choose file elementini locate ediyoruz
+     //sonrasinda sendKeys(file path)
+     //File Path:
+     //Windows icin: shift tusu+ dosya uzerinde sag click yapip Copy asPath(yol olarak) seciyoruz
+
+     */
 
     WebDriver driver;
 

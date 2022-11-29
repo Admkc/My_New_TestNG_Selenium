@@ -1,0 +1,36 @@
+configuration.properties test datalarını tuttugumuz bir dosya .
+proporties in ismini degistiremezsin.
+kullandıgımız dataları = diyerek yazarız.
+
+key = value
+key kullanarak value cagırırız
+key uniqeu  olmalıdır
+
+proje yapılandırma verilerini , veritabanı yapılandırmasını veya proje ayarlarını vb
+  Properties türünde bir nesne kullanarak bazı dosyalardan özellikleri kolayca okuyabilirsiniz.
+
+*frameworku kolay yönetebilmemiz icin en büyük ihtiyac test datalarını yönetmektir.
+ POM  da ihtiyacımız olan tüm test datalarını configuration.proporties file a yazarız,
+
+test datalarına ihtiyacımız oldugunda Configuration Reader clasında olusturacagımız
+getProperty(String key);
+metodu ile test datasına ulasabiliriz.
+
+What is Automation Framework?
+Automation framework —> integrated system
+ —> Organization of;
+ * packages,
+ * files
+ * classes
+ * tools
+
+--> in a way that it makes writing and maintaining automated tests easy.
+
+--Good Framework must be easy to understand, easy to use, easy to scale,
+reusable, easy to maintain and report .
+
+-->properties file works like a control center.
+ --> we manage our browser, url,database and couple of user information from those file and changes
+values.
+
+**It has Key & Value structure

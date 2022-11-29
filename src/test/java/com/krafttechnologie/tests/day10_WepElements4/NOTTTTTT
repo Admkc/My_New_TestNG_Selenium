@@ -1,0 +1,96 @@
+
+Elements 4
+Pop Ups , Multiple Windows, Iframe
+POP Ups
+Pop Ups, modal, alerts, dialog , overlay —> web üzerindeki herhangi bir pop up
+Yapılarına göre 2 farklı pop up handle etme yolu var.
+HTML pop Ups
+pop up HTML de ise - yani inspect/incele yapalabiliyorsa normal
+usullerle LOCATE edilir.
+Javascript Alerts
+Javascript kaynaklıdır ve js alerts olarak bilinir.
+Inspect/İncele yapılamaz, ( üstünde click vs. olmaz)
+JS Alerts için Alert class (Seleniumdan) kullanılır
+Alert class kullanılışı
+Alert alert=driver.switchTo().alert() ; —> Seleniumdan
+Methods:
+alert.accept() ; —> click OK
+alert.dismiss() ; —> click CANCEL
+alert.sendKeys("KraftTech Batch 2 was here") ; —> Send Keys
+alert.getText() —> getText
+Alert yoksa ve Alert class kullanılırsa ?
+NoAlertPresentException: no such alert
+Multiple Windows
+KTB2-Day10-Type Of Web Elements 4 2
+Tab/Sekmeler ve Windows
+Selenyumda Tab ve Windows arasında fark yoktur.
+Varsayılan olarak selenyum bir HTML sayfasını kontrol eder
+Sayfayı ilk açtığımızda sadece o sayfayı işaret eder.
+Yeni Tab/Window açıldığında hala eski/current/mevcut Window üzerinde işleme
+devam eder
+Yeni Window ile herhangi bir enjeksiyon yapmak için yeni Window a geçilmelidir
+driver.getWindowHandle())**; -→ current/geçerli window a ait unique/benzersiz bir
+kod döndürür. —> Unique identifier for window
+driver.getWindowHandles()**; — > tüm açık windows a ait ID leri döndürür. (Set of
+String ile—> Set<String>)
+How to switch next window/tab?
+WebElement click_here = driver.findElement(By.linkText("Click Here"));
+click_here.click();
+Thread.sleep(2000)
+String currentTab = driver.getWindowHandle();
+// title The internet and has ID
+// it will change every time
+System.out.println("currentTab = " + currentTab);
+Set<String> windowHandles = driver.getWindowHandles();
+// first and most important thing ;
+// HasSet is a collection of an items where every item is unique!!!
+for (String tab : windowHandles) { //go and check one by one
+if(!tab.equals(currentTab)) {
+driver.switchTo().window(tab);
+}
+}
+Haw to handle more than 2 windows/tab?
+WebElement click_here = driver.findElement(By.linkText("Click Here"));
+click_here.click();
+click_here.click();
+KTB2-Day10-Type Of Web Elements 4 3
+click_here.click();
+click_here.click();
+Set<String> windowHandles = driver.getWindowHandles();
+for (String tab : windowHandles) {
+driver.switchTo().window(tab);
+//if(driver.getTitle().equals("New Window")){
+if(driver.getCurrentUrl()
+.equals("https://the-internet.herokuapp.com/windows/new")){
+break;
+}
+}
+Iframe
+No Such Element Exception
+1- Locator might be wrong or dynamic or not correct-Locator/konumlandırıcı
+yanlış veya dinamik olabilir veya doğru olmayabilir.
+2- Not enough wait time - Yeterli bekleme süresi yok
+3- There is a frame or iframe -Bir frame veya iframe var !
+Html'de bir HTML sayfasının içinde diğerine sahip olabiliriz.
+Bu, <iframe> veya <frame> etiketi ile sağlanır.
+Frames kullanarak HTML'nin içine koyabiliriz.
+Frame varsa, selenyum frame içinde ne olduğunu kontrol edemez.
+Önce iframe'i değiştirmeliyiz.
+iframe'e geçtiğimizde, selenium biz
+geri değiştirene kadar default/varsayılan sayfayı göremez,
+Bir seferde sadece bir frame değiştirebiliriz ve torunlara doğrudan geçilmez.
+kardeş/sibling arası geçiş/switch olmaz sadece ebeveynden çocuğa/parentchild.
+HTML —> Selenium works here default
+0 frame-top
+0 - frame-left
+1 frame-bottom
+KTB2-Day10-Type Of Web Elements 4 4
+1 - frame-middle
+2 -frame-right
+parent to child or child to parent
+1. 1HTML—>frame-top —>
+right
+2. right—>frame-top—>left
+3. left—> frame-top-middle
+middle—>frame top—>HTML—>frame-bottom
+if you use defaultContent() —> it will start from HTML

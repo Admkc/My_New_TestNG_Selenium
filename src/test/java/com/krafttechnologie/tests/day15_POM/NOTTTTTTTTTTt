@@ -1,0 +1,15 @@
+POM, Test durumlarını otomatikleştirmek için Selenium’da yaygın olarak kullanılan bir design pattern(tasarım desenidir)
+
+ Page object model (POM), test otomasyon projelerinde kullanımı çok yaygın olan bir design pattern’ dır.
+
+*** POM sayesinde kod tekrarı yapmayız ve kod maintenance çok daha kolay olur. Page object model ile her sayfayı,
+ bir page class’ı ile ilişkilendiririz. Bu page classında da o sayfaya ait olan web elementler
+ ve yine o sayfaya ait metodlar yer alır.
+ Böylece, bu sayfada herhangi bir elementin locator’ında değişiklik olduğu zaman, bunu ortak bir yerden yönetebiliriz.
+ Bu sayfada işlem yapan her testimizde element locator’unu tek tek değiştirmek yerine,
+ tek bir class’ta yapmış olduğumuz değişiklik ile maintenance çok daha kolay hale gelir.
+
+ ***Page Object Pattern sayesinde bakımı daha kolay , anlaşılır ve takip edilebilir kodlar yazarız.
+- Tekrar kullanılabilir yapılar oluşturmamızı da sağlar.
+ -Özellikle agile bir process izliyorsanız testlerin sürdürebilirliğini artırır.
+ -Bir sistematiğe oturturuz ve bir şeyleri değiştirmek istediğimizde nereden değişiklik yapacağımızı biliriz.

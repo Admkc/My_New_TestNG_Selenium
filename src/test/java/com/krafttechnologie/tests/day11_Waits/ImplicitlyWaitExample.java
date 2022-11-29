@@ -12,6 +12,27 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class ImplicitlyWaitExample {
+    /**
+
+     /**
+     * Dynamic Wait
+     Selenium --> NoSuchelementException'ın şifası, bir defa yazılır,
+     implicitly wait her find element öncesi calısır.
+
+     *bir objeye ulaşmaya çalışırken bu obje eğer sayfada henüz yüklenmemişse WebDriver’a Dom’a
+     sorgu yapması için bir zaman vererek bulmasını sağlarız.
+
+     *İmplicit wait  tüm objelere uygulanır ve belirtilen süre içerisinde bu objeyi aramaya devam eder,
+     bulunmasını istediğimiz obje için ExpectedConditions belitmek zorunda DEGİLİZ.
+
+     *web sürücüsüne “No Such Element Exception” oluşturmadan önce belirli bir süre beklemesini söylemek için kullanılır
+     * driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS)
+
+
+     --web element process gerceklestikten sonra görülür
+     --before methotta calisir
+     */
+
 
     WebDriver driver;
 

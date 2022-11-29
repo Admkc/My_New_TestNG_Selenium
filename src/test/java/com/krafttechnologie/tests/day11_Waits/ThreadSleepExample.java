@@ -9,6 +9,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class ThreadSleepExample {
+
+    /**Web otomasyonu oluştururken sayfadaki objelerini yakalamamız gerekiyor,
+    bu objelere ulaşırken sayfanızın düzgün bir şekilde yüklenmiş olması gerekiyor.
+    Tarayıcı tarafından bir sayfa yüklendiğinde,
+    etkileşim kurmak istediğimiz öğeler farklı zaman aralıklarında yüklenebilir.
+    Bu sorunu çeşitli bekletme yöntemleri ile çözebiliriz.
+     */
     WebDriver driver;
 
     @BeforeMethod

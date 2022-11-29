@@ -13,6 +13,14 @@ public class GetAttribute {
         //2. getAttribute("attribute name") --> second way of getting text especially input box
 
 
+         /**
+         getAttribute();
+         1. locator.getAttribute("attributeAdı") --> herhangi bir attribute değerini bulma,
+         2. locator.getAttribute("outerHTML") --> ilgili elementin html karşılığını alma.
+         */
+
+
+
         String email="mike@gmail.com";
 
 

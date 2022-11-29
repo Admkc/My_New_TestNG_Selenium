@@ -14,6 +14,14 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class Actions1 {
+    /**
+
+     //Action class ileri duzey etkilesimler sunar.
+     //doubleclick, dragganddropp, hover, rightclick..vb
+     //Action Class Seleniumdan gelir. Webdriver constructor gibi parametre olarak atanir.
+     //Cunku driveri browserla etkilesime gecebilmesi icin
+     //perform()----> action tamamlamak icin kullanilir.
+     */
 
     WebDriver driver;
 

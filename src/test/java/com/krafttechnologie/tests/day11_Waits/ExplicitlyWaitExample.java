@@ -15,6 +15,24 @@ import java.util.concurrent.TimeUnit;
 
 public class ExplicitlyWaitExample {
 
+    /**
+     * dinamic wait
+     *  --> Selenium --> Element spesific (hedefteki her bir element için ayrı ayrı oluşturulur)
+     her ihtiyacın olduğunda çağır
+     koşul sağlanana veya süre bitene kadar bekler
+     farklı koşulları bekler (interactible,visible,invisible,text,clicible vb.)
+
+     *Bir sonraki adım çalışmadan önce belirtilen şartın gerçekleşmesi için beklemeyi sağlayan kod parçasıdır.
+
+     * bizim erişmek istediğimiz öğeye uygulanır. Belirli obje  ve koşul gereklidir.
+     Bulunmasını istediğimiz obje için ExpectedConditions belitmeliyiz
+
+     *Timesout excepsion verir
+
+     WebDriverWait webDriverWait = new WebDriverWait(driver, 7);
+     webDriverWait.until(ExpectedConditions.visibilityOf(SPESİFİK WEB ELEMENT))
+     */
+
     WebDriver driver;
 
     @BeforeMethod
