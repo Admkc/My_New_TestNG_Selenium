@@ -9,11 +9,6 @@ public class DDFWithDataProvider {
     //once @dataProviderdan metodumuzu olusturuyoruz
     //Bu metod testimize data saglayacak
 
-
-    @Test
-    public void testName() {
-    }
-
     @DataProvider(name = "AracSatisOranlari")
     public Object [][] testData(){
 

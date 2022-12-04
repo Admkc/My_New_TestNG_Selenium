@@ -3,6 +3,10 @@ Data Driven Framework
 Cok sayidaki datayi disaridaki bir kaynaktan (.xlx,xml,.csv, database..)
 alarak tek bir test kodu ile testleri yurutmemizze yarayan frameworktur.
 
+Testimiz sağlanan data miktarınca koşulur...
+
+***Dataprovider bunu sağlamak için testNG'nin bize sunduğu bir yol...
+
 Avantajlari
 === Datada yapilan herhangi bir degisiklik
 koda etki etmez
@@ -20,5 +24,6 @@ POI nedir?
 Ofis dosyalarini okumak ve yazmak icin Java tarafindan
 gelistirilmis bir arayuzdur.Cunku Selenium ofis dosyalarini yazmayi ve
 okumayi desteklemez.
-=== ExelUtil Class Utilities klasorune yukluyoruz
+
+=== ExelUtil Class i Utilities klasorune yukluyoruz
 ===resources altina datamizi iceren Excel dosyasini yerlestiriyoruz.

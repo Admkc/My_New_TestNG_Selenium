@@ -16,4 +16,5 @@ Extent Reports, Anshoo Arora tarafından geliştirilen,JUnit ve TestNG çerçeve
  Tek bir test paketinde çalıştırılan test senaryolarını kolayca takip edebilirsiniz.
  Birden çok çerçeve TestNG ve JUnit ile entegrasyon kolaylaşır.
  Testin yürütülmesi için gereken süreyi belirlemenize yardımcı olur.
- Tamamen kontrol edebileceğiniz açıklayıcı bir rapor oluşturmak için önemli ekran görüntüleri, etiketler, cihazlar veya diğer ilgili bilgileri ekleyebilirsiniz.
+ Tamamen kontrol edebileceğiniz açıklayıcı bir rapor oluşturmak için önemli ekran görüntüleri, etiketler,
+  cihazlar veya diğer ilgili bilgileri ekleyebilirsiniz.

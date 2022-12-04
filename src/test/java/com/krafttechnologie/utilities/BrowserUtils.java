@@ -20,6 +20,8 @@ public class BrowserUtils {
      * • Utilities: icerisinde tum projede ortak kullanilan metodlarin oldugu
      * klasordurdur. Browserutilities, Driver, ConfigurationReader ..vb
 
+     * Tum framework icin kullanisli metodlari icerir
+
      */
 
 
