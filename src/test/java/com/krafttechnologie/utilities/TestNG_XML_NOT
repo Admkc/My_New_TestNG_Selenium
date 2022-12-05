@@ -14,3 +14,16 @@ Test yöntemlerimizi önceliklendirmemize yardımcı olur.
 Test yöntemlerinin test grupları halinde gruplandırılmasına izin verir.
 @Parameters ek açıklamasını kullanarak test senaryolarının parametreleştirilmesini destekler.
 @DataProvider ek açıklamasını kullanarak Veriye dayalı testlerde yardımcı olur.
+
+Regresyon Testi nedir?
+
+Regresyon Testi, yazılımdaki bir kod değişikliğinin ürünün mevcut işlevselliğini etkilemediğini
+doğrulamak için yapılan bir test türüdür. Bu, ürünün yeni işlevler, hata düzeltmeleri
+veya mevcut özellikteki herhangi bir değişiklikle düzgün çalıştığından emin olmak içindir.
+Değişikliğin etkisini doğrulamak için önceden yürütülen test senaryoları yeniden yürütülür
+
+Smoke Test (Duman Testi),
+geliştirilen yazılımın fonksiyonlarının doğru çalışıp çalışmadığını kontrol etmek
+amacıyla yapılan yazılım test sürecidir. Yazılım fonksiyonlarını test etmek için her yapı üzerinde yürütülen
+bir dizi testten oluşur. Amaç, hataları erkenden tespit edip önleyerek maliyet ve zaman kaybının önüne geçilmesidir.
+Duman testleri, sistem kararlılığını ve gereksinimlere uygunluğunu göstermek için tasarlanmıştır.
